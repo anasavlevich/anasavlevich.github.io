@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru"> <!--class="show-event-popup"-->
+<html lang="ru">
+  <!--class="show-event-popup"-->
   @@include('blocks/head.html')
   <body class="body">
     @@include('blocks/page-header.html')
@@ -36,10 +37,54 @@
             "descr": "Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.",
             "time": "16.12.2024 | начало 20.00",
             "datetime": "2024-12-16T20:00"
+            },
+            {
+            "class": "listing__event-card",
+            "img": "assets/images/icon_4.jpg",
+            "alt": "Exibit",
+            "title": "Выставка Малевича в Томске",
+            "descr": "Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.",
+            "time": "23.12.2024 | начало 20.00",
+            "datetime": "2024-12-23T20:00"
+            },
+            {
+            "class": "listing__event-card",
+            "img": "assets/images/icon_5.jpg",
+            "alt": "Tatler",
+            "title": "Мастер — класс по студийной съемке от Tatler",
+            "descr": "Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.",
+            "time": "25.12.2024 | начало 13.00",
+            "datetime": "2024-12-25T13:00"
+            },
+            {
+            "class": "listing__event-card",
+            "img": "assets/images/icon_6.jpg",
+            "alt": "Hatters",
+            "title": "Повесилимся на славу на концерте The Hatters",
+            "descr": "Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко",
+            "time": "27.12.2024 | начало 10.00",
+            "datetime": "2024-12-27T10:00"
             }
             ])
           </div>
-          <!-- Кнопка "Показать все" -->
+          <a href="#" class="listing__show-link">
+            <span class="listing__show-more">Показать еще</span>
+            <div class="listing__arrow arrow">
+              <svg class="arrow__icon" width="92" height="62">
+                <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+              </svg>
+            </div>
+          </a>
+        </section>
+        <section class="events__table">
+          <h2 class="table__table-title section-title">дополнительные услуги</h2>
+          <p class="events__table-descr">
+            Перед запуском проекта, мы подготавливаем подробную смету и
+            согласуем ее с клиентом. Убедившись, что все пожеланию учтены и мы
+            можем приступать к реализациии проекта, начинается сложная, но
+            интересная работа, результатом которой будет проведение вашего
+            мероприятия на высшем уровне.</p>
+            @@include('blocks/table.html')
         </section>
       </div>
     </main>
