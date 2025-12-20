@@ -1,0 +1,127 @@
+.page-footer {
+  font-family: @font1;
+  font-weight: 600;
+  font-size: 16px;
+  color: @black;  
+
+  &__contents {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1337px;
+    margin: 0 auto 75px;
+  }
+
+  &__container {    
+    display: grid;
+    grid-template-areas: 
+    "links links form"
+    "copyright copyright copyright"
+    "utility socials dignity";
+    gap: 20px 190px;
+    justify-content: space-between;    
+  }
+
+  &__divider {
+    margin-bottom: 60px;
+  }
+
+  &__divider-img {    
+    width: 100%;
+    max-width: 1260px;
+  }
+
+  &__links {
+    grid-area: links;
+    display: flex;
+    flex-direction: column;
+  } 
+
+  &__link {
+    text-decoration: none !important;
+    margin-top: 22px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__form {
+    grid-area: form;
+  }
+
+  &__form-email {
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 14px;
+    margin-left: 17px;
+  }
+
+  &__form-input {
+    border-radius: 0;
+  }
+
+  &__form-btn {
+    background-color: @black;
+    color: @white;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    &:hover {
+        background-color: @red_dark;
+    }
+  }
+
+  &__form-check {
+    margin-left: 17px;
+  }
+
+  &__form-checklabel {
+    margin-left: 15px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  &__copyright {
+    grid-area: copyright;
+    margin-top: 40px;
+  }
+
+  &__copyright-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__utility {
+    grid-area: utility;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 60px;
+  }
+
+  &__utility-link {
+    text-decoration: none;
+  }
+
+  &__socials {
+    grid-area: socials;
+    display: inline-flex;
+    gap: 44px;
+  }
+
+  &__socials-link {
+    position: relative;
+    bottom: 40px;
+  }
+
+  &__dignity {
+    grid-area: dignity;
+    display: inline-flex;
+    gap: 10px;
+    margin-left: 106px;
+  }
+
+  &__dignity-link {
+    position: relative;
+    bottom: 6px;
+  }
+}
