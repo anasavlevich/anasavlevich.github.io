@@ -1,0 +1,48 @@
+.contacts {
+  &__container {
+    .container();
+    display: grid;
+    grid-template-areas:
+      "adress map"
+      "rent map"
+      "events map";
+  }
+  &__adress {
+    grid-area: adress;
+  }
+  &__rent {
+    grid-area: rent;
+  }
+  &__events {
+    grid-area: events;
+  }
+  &__map {
+    grid-area: map;
+  }
+  &__adress,
+  &__rent,
+  &__events {
+    align-self: center;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 0 54px;
+    align-items: center;
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    font-family: @font1;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  &__details {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 5px;
+    
+  }
+}

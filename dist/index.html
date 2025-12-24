@@ -59,7 +59,9 @@
         <div class="intro__form">
           <div class="intro__title3">Я хочу:</div>
           <div class="intro__btns">
-            <button class="btn btn--red">Провести мероприятие</button>
+            <button type="button" class="intro__btn-offer btn btn--red" id="js-eventOpenBtn">
+              Провести мероприятие
+            </button>
             <button class="btn intro__btn-patron">Стать арендатором</button>
           </div>
         </div>
@@ -69,14 +71,11 @@
         <h2 class="listing__title section-title">о нас</h2>
         <div class="about__container">
           <div class="about__block1">
-            <h3 class="about__title">
-              Проект «Millennials»
-            </h3>
-            <p class="about__text">
-              Вдохновлен молодыми идейными людьми, увлеченными творчеством,
-              эмоциями и желанием сделать мир лучше, проявить себя.
-              У них есть талант и стремление, у нас возможность помочь
-              им воплотить их мечту в реальность.
+            <h3 class="about__title1">Проект «Millennials»</h3>
+            <p class="about__text1">
+              Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и
+              желанием сделать мир лучше, проявить себя. У них есть талант и
+              стремление, у нас возможность помочь им воплотить их мечту в реальность.
             </p>
           </div>
           <div class="about__block2">
@@ -88,7 +87,7 @@
               <source type="imgage/webp" srcset="assets/images/about/desktop/webp/about_1.webp" />
               <img src="assets/images/about/desktop/about_1.jpg" class="about__img" alt="about1" />
             </picture>
-            <h3 class="about__title">
+            <h3 class="about__title2">
               Мы предоставляем площади для вашего мероприятия
             </h3>
             <picture class="about__picture2">
@@ -99,12 +98,176 @@
               <source type="imgage/webp" srcset="assets/images/about/desktop/webp/about_2.webp" />
               <img src="assets/images/about/desktop/about_2.jpg" class="about__img" alt="about2" />
             </picture>
-            <p class="about__text">
+            <p class="about__text2">
               И оказываем помощь с организацией, если вам это нужно. Наша цель:
               вовлечь в культурную жизнь города как можно больше людей, помочь молодым
               ребятам сделать первые шаги к своей мечте и рассказать всем о том, что
               их волнует.
             </p>
+          </div>
+          <div class="about__block3">
+            <div class="about__block3-img">
+              <picture class="about__picture3">
+                <source media="(max-width: 450px)" type="imgage/webp" srcset="assets/images/about/tablet/webp/about_3.webp" />
+                <source media="(max-width: 450px)" srcset="assets/images/about/tablet/about_3.jpg" />
+                <source media="(max-width: 1169px)" type="imgage/webp" srcset="assets/images/about/desktop/webp/about_3.webp" />
+                <source media="(max-width: 1169px)" srcset="assets/images/about/desktop/about_3.jpg" />
+                <source type="imgage/webp" srcset="assets/images/about/desktop/webp/about_3.webp" />
+                <img src="assets/images/about/desktop/about_3.jpg" class="about__img" alt="about3" />
+              </picture>
+            </div>
+            <p class="about__text3">
+              Мы уже успешно организовали и провели более 100 проектов. Посмотрите,
+              как это было классно.
+            </p>
+            <a href="#" class="about__link">
+              <span class="about__link-text">Смотреть</span>
+              <div class="about__link-arrow arrow">
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="upcoming @@class">
+        <div class="upcoming__wrapper">
+          <div class="upcoming__container">
+            <h2 class="upcoming__title section-title">Мероприятия</h2>
+            <div class="upcoming__swiper swiper swiper--3s js-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <!-- prettier-ignore -->
+                  <article class="event-card  ">
+                    <a href="#" class="event-card__link">
+                      <picture class="event-card__picture">
+                        <source media="(max-width: 450px)" type="imgage/webp" srcset="assets/images/events/desktop/webp/icon_1.webp" />
+                        <source media="(max-width: 450px)" srcset="assets/images/events/desktop/icon_1.jpg" />
+                        <source media="(max-width: 1169px)" type="imgage/webp" srcset="assets/images/events/tablet/webp/icon_1.webp" />
+                        <source media="(max-width: 1169px)" srcset="assets/images/events/tablet/icon_1.jpg" />
+                        <source type="imgage/webp" srcset="assets/images/events/desktop/webp/icon_1.webp" />
+                        <img src="assets/images/events/desktop/icon_1.jpg" alt="nirvana" class="event-card__img" />
+                      </picture>
+                      <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
+                      <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+                      <time datetime="@@datatime" class="event-card__time">07.12.2024 | начало 18.00</time>
+                    </a>
+                  </article>
+
+                </div>
+                <div class="swiper-slide">
+                  <!-- prettier-ignore -->
+                  <article class="event-card  ">
+                    <a href="#" class="event-card__link">
+                      <picture class="event-card__picture">
+                        <source media="(max-width: 450px)" type="imgage/webp" srcset="assets/images/events/desktop/webp/icon_2.webp" />
+                        <source media="(max-width: 450px)" srcset="assets/images/events/desktop/icon_2.jpg" />
+                        <source media="(max-width: 1169px)" type="imgage/webp" srcset="assets/images/events/tablet/webp/icon_2.webp" />
+                        <source media="(max-width: 1169px)" srcset="assets/images/events/tablet/icon_2.jpg" />
+                        <source type="imgage/webp" srcset="assets/images/events/desktop/webp/icon_2.webp" />
+                        <img src="assets/images/events/desktop/icon_2.jpg" alt="stuff" class="event-card__img" />
+                      </picture>
+                      <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
+                      <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
+                      <time datetime="@@datatime" class="event-card__time">14.12.2024 | начало 18.30</time>
+                    </a>
+                  </article>
+
+                </div>
+                <div class="swiper-slide">
+                  <!-- prettier-ignore -->
+                  <article class="event-card  ">
+                    <a href="#" class="event-card__link">
+                      <picture class="event-card__picture">
+                        <source media="(max-width: 450px)" type="imgage/webp" srcset="assets/images/events/desktop/webp/icon_3.webp" />
+                        <source media="(max-width: 450px)" srcset="assets/images/events/desktop/icon_3.jpg" />
+                        <source media="(max-width: 1169px)" type="imgage/webp" srcset="assets/images/events/tablet/webp/icon_3.webp" />
+                        <source media="(max-width: 1169px)" srcset="assets/images/events/tablet/icon_3.jpg" />
+                        <source type="imgage/webp" srcset="assets/images/events/desktop/webp/icon_3.webp" />
+                        <img src="assets/images/events/desktop/icon_3.jpg" alt="sade" class="event-card__img" />
+                      </picture>
+                      <h4 class="event-card__title">Вечер | The Best of Sade</h4>
+                      <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
+                      <time datetime="@@datatime" class="event-card__time">16.12.2024 | начало 20.00</time>
+                    </a>
+                  </article>
+
+                </div>
+                <div class="swiper-slide">
+                  <!-- prettier-ignore -->
+                  <article class="event-card  ">
+                    <a href="#" class="event-card__link">
+                      <picture class="event-card__picture">
+                        <source media="(max-width: 450px)" type="imgage/webp" srcset="assets/images/events/desktop/webp/icon_4.webp" />
+                        <source media="(max-width: 450px)" srcset="assets/images/events/desktop/icon_4.jpg" />
+                        <source media="(max-width: 1169px)" type="imgage/webp" srcset="assets/images/events/tablet/webp/icon_4.webp" />
+                        <source media="(max-width: 1169px)" srcset="assets/images/events/tablet/icon_4.jpg" />
+                        <source type="imgage/webp" srcset="assets/images/events/desktop/webp/icon_4.webp" />
+                        <img src="assets/images/events/desktop/icon_4.jpg" alt="Exibit" class="event-card__img" />
+                      </picture>
+                      <h4 class="event-card__title">Выставка Малевича в Томске</h4>
+                      <p class="event-card__description">Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.</p>
+                      <time datetime="@@datatime" class="event-card__time">23.12.2024 | начало 20.00</time>
+                    </a>
+                  </article>
+
+                </div>
+                <div class="swiper-slide">
+                  <!-- prettier-ignore -->
+                  <article class="event-card  ">
+                    <a href="#" class="event-card__link">
+                      <picture class="event-card__picture">
+                        <source media="(max-width: 450px)" type="imgage/webp" srcset="assets/images/events/desktop/webp/icon_5.webp" />
+                        <source media="(max-width: 450px)" srcset="assets/images/events/desktop/icon_5.jpg" />
+                        <source media="(max-width: 1169px)" type="imgage/webp" srcset="assets/images/events/tablet/webp/icon_5.webp" />
+                        <source media="(max-width: 1169px)" srcset="assets/images/events/tablet/icon_5.jpg" />
+                        <source type="imgage/webp" srcset="assets/images/events/desktop/webp/icon_5.webp" />
+                        <img src="assets/images/events/desktop/icon_5.jpg" alt="Tatler" class="event-card__img" />
+                      </picture>
+                      <h4 class="event-card__title">Мастер — класс по студийной съемке от Tatler</h4>
+                      <p class="event-card__description">Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.</p>
+                      <time datetime="@@datatime" class="event-card__time">25.12.2024 | начало 13.00</time>
+                    </a>
+                  </article>
+
+                </div>
+                <div class="swiper-slide">
+                  <!-- prettier-ignore -->
+                  <article class="event-card  ">
+                    <a href="#" class="event-card__link">
+                      <picture class="event-card__picture">
+                        <source media="(max-width: 450px)" type="imgage/webp" srcset="assets/images/events/desktop/webp/icon_6.webp" />
+                        <source media="(max-width: 450px)" srcset="assets/images/events/desktop/icon_6.jpg" />
+                        <source media="(max-width: 1169px)" type="imgage/webp" srcset="assets/images/events/tablet/webp/icon_6.jpg" />
+                        <source media="(max-width: 1169px)" srcset="assets/images/events/tablet/icon_6.jpg" />
+                        <source type="imgage/webp" srcset="assets/images/events/desktop/webp/icon_6.webp" />
+                        <img src="assets/images/events/desktop/icon_6.jpg" alt="Hatters" class="event-card__img" />
+                      </picture>
+                      <h4 class="event-card__title">Повесилимся на славу на концерте The Hatters</h4>
+                      <p class="event-card__description">Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко</p>
+                      <time datetime="@@datatime" class="event-card__time">27.12.2024 | начало 10.00</time>
+                    </a>
+                  </article>
+
+                </div>
+              </div>
+              <footer class="swiper-footer">
+                <div class="swiper-arrow-prev arrow arrow--left">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                  </svg>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-arrow-next arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                  </svg>
+                </div>
+              </footer>
+            </div>
+            <a href="#" class="upcoming__link link">Смотреть все</a>
           </div>
         </div>
       </section>
@@ -190,13 +353,124 @@
         <a href="#" class="listing__link link">Смотреть все</a>
       </section>
 
+      <div class="contacts">
+        <h2 class="listing__title section-title">контакты</h2>
+        <div class="contacts__container">
+          <div class="contacts__adress">
+            <div class="contacts__location">
+              <svg class="contacts__location-pic" width="110" height="110">
+                <use xlink:href="assets/icons/symbols.svg#location"></use>
+              </svg>
+            </div>
+            <div class="contacts__text">
+              <span class="contacts__title">Томск, Красноармейская 146</span>
+              <span class="contacts__details">2 этаж</span>
+              <span class="contacts__details">оф. 206</span>
+            </div>
+          </div>
+          <div class="contacts__rent">
+            <div class="contacts__home">
+              <svg class="contacts__home-pic" width="110" height="110">
+                <use xlink:href="assets/icons/symbols.svg#home"></use>
+              </svg>
+            </div>
+            <div class="contacts__text">
+              <span class="contacts__title">Отдел аренды</span>
+              <a href="tel:+73822907256" class="contacts__details">8 (3822) 90-72-56</a>
+              <a href="idat@tusur.ru" class="contacts__details">idat@tusur.ru</a>
+            </div>
+          </div>
+          <div class="contacts__events">
+            <div class="contacts__star">
+              <svg class="contacts__star-pic" width="110" height="110">
+                <use xlink:href="assets/icons/symbols.svg#star"></use>
+              </svg>
+            </div>
+            <div class="contacts__text">
+              <span class="contacts__title">Отдел мероприятий </span>
+              <a href="tel:+73822907256" class="contacts__details">8 (3822) 90-72-56</a>
+              <a href="idat@tusur.ru" class="contacts__details">idat@tusur.ru</a>
+            </div>
+          </div>
+          <div class="contacts__map" id="js-contactsMap"></div>
+        </div>
+      </div>
+
     </div>
   </main>
-  <div class="pp" id="eventPP">
+  <footer class="page-footer">
+    <div class="page-footer__contents">
+      <div class="page-footer__divider">
+        <svg class="page-footer__divider-img" width="1260" height="2">
+          <use xlink:href="assets/icons/symbols.svg#page-footer_divider"></use>
+        </svg>
+      </div>
+      <div class="page-footer__container">
+        <div class="content">
+          <blockquote class="page-footer__links">
+            <a href="#" class="page-footer__link">Календарь мероприятий</a>
+            <a href="#" class="page-footer__link">Провести мероприятие</a>
+            <a href="#" class="page-footer__link">Стать арендатором</a>
+            <a href="#" class="page-footer__link">Наши проекты</a>
+            <a href="#" class="page-footer__link">Контакты</a>
+          </blockquote>
+        </div>
+        <div class="page-footer__form">
+          <form class="page-footer__form-container">
+            <span class="page-footer__form-title">Подпишись и будь в курсе происходящего</span>
+            <div class="page-footer__form-email">
+              <label class="field page-footer__form-field">
+                <input class="field__input page-footer__form-input" type="email" placeholder="Email" name="mailing_list_email" />
+              </label>
+              <button type="submit" class="btn page-footer__form-btn">
+                Подписаться
+              </button>
+            </div>
+            <label class="check page-footer__form-check">
+              <input type="checkbox" name="agree" class="check__input" required checked />
+              <span class="check__mark"></span>
+              <span class="page-footer__form-checklabel">
+                Согласен на обработку персональных данных
+              </span>
+            </label>
+          </form>
+        </div>
+        <div class="page-footer__copyright">
+          <a href="#" class="page-footer__copyright-link">© Millennials 2025</a>
+        </div>
+        <div class="page-footer__utility">
+          <a href="#" class="page-footer__utility-link">Политика конфиденциальности</a>
+          <a href="#" class="page-footer__utility-link">Cookies</a>
+        </div>
+        <div class="page-footer__socials">
+          <a href="#" class="page-footer__socials-link">
+            <svg class="page-footer__socials-icon" width="58" height="58">
+              <use xlink:href="assets/icons/symbols.svg#socials_vk"></use>
+            </svg>
+          </a>
+          <a href="#" class="page-footer__socials-link">
+            <svg class="page-footer__socials-icon" width="58" height="58">
+              <use xlink:href="assets/icons/symbols.svg#socials_vk"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="page-footer__dignity">
+          <span class="page-footer__dignity-text">Создание и продвижение</span>
+          <a href="#" class="page-footer__dignity-link">
+            <svg class="page-footer__dignity-logo" width="80" height="36">
+              <use xlink:href="assets/icons/symbols.svg#dignity_codes"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="pp" id="js-eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
-        <button class="pp__x-btn x-btn">
-          <svg class="pp__x-icon" width="60" height="60">
+        <button class="pp__x-btn x-btn js-ppCloseBtn">
+          <svg class="x-btn__icon" width="60" height="60">
             <use xlink:href="assets/icons/symbols.svg#close"></use>
           </svg>
         </button>
@@ -287,82 +561,16 @@
           </label>
           <div class="form__btns">
             <button type="submit" class="btn form__submit">Отправить</button>
-            <button type="button" class="form__close-btn">Закрыть</button>
+            <button type="button" class="form__close-btn js-ppCloseBtn">Закрыть</button>
           </div>
         </form>
       </div>
     </div>
   </div>
 
-  <footer class="page-footer">
-    <div class="page-footer__contents">
-      <div class="page-footer__divider">
-        <svg class="page-footer__divider-img" width="1260" height="2">
-          <use xlink:href="assets/icons/symbols.svg#page-footer_divider"></use>
-        </svg>
-      </div>
-      <div class="page-footer__container">
-        <div class="content">
-          <blockquote class="page-footer__links">
-            <a href="#" class="page-footer__link">Календарь мероприятий</a>
-            <a href="#" class="page-footer__link">Провести мероприятие</a>
-            <a href="#" class="page-footer__link">Стать арендатором</a>
-            <a href="#" class="page-footer__link">Наши проекты</a>
-            <a href="#" class="page-footer__link">Контакты</a>
-          </blockquote>
-        </div>
-        <div class="page-footer__form">
-          <form class="page-footer__form-container">
-            <span class="page-footer__form-title">Подпишись и будь в курсе происходящего</span>
-            <div class="page-footer__form-email">
-              <label class="field page-footer__form-field">
-                <input class="field__input page-footer__form-input" type="email" placeholder="Email" name="mailing_list_email" />
-              </label>
-              <button type="submit" class="btn page-footer__form-btn">
-                Подписаться
-              </button>
-            </div>
-            <label class="check page-footer__form-check">
-              <input type="checkbox" name="agree" class="check__input" required checked />
-              <span class="check__mark"></span>
-              <span class="page-footer__form-checklabel">
-                Согласен на обработку персональных данных
-              </span>
-            </label>
-          </form>
-        </div>
-        <div class="page-footer__copyright">
-          <a href="#" class="page-footer__copyright-link">© Millennials 2025</a>
-        </div>
-        <div class="page-footer__utility">
-          <a href="#" class="page-footer__utility-link">Политика конфиденциальности</a>
-          <a href="#" class="page-footer__utility-link">Cookies</a>
-        </div>
-        <div class="page-footer__socials">
-          <a href="#" class="page-footer__socials-link">
-            <svg class="page-footer__socials-icon" width="58" height="58">
-              <use xlink:href="assets/icons/symbols.svg#socials_vk"></use>
-            </svg>
-          </a>
-          <a href="#" class="page-footer__socials-link">
-            <svg class="page-footer__socials-icon" width="58" height="58">
-              <use xlink:href="assets/icons/symbols.svg#socials_vk"></use>
-            </svg>
-          </a>
-        </div>
-        <div class="page-footer__dignity">
-          <span class="page-footer__dignity-text">Создание и продвижение</span>
-          <a href="#" class="page-footer__dignity-link">
-            <svg class="page-footer__dignity-logo" width="80" height="36">
-              <use xlink:href="assets/icons/symbols.svg#dignity_codes"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script defer src="scripts\main.min.js"></script>
+  <script src="scripts/swiper.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key="></script>
+  <script src="scripts/main.min.js"></script>
 </body>
 
 </html>

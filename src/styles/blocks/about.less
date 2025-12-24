@@ -1,8 +1,12 @@
 .about {
-    .container();
+  &__container {
+        .container();
+    }
 
   &__block1 {
-    margin-bottom: 100px;    
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
   }
 
   &__block2 {
@@ -13,16 +17,25 @@
       "pic1 pic2"
       "title pic2"
       "text text";
+      margin-bottom: 75px;
   }
 
   &__picture1 {
     grid-area: pic1;
   }
 
-  &__title {
-    grid-area: title;
+  &__title1,
+  &__title2 {
     font-weight: 700;
     font-size: 44px;
+  }
+
+  &__title1 {
+    text-wrap: nowrap;
+  }
+  
+  &__title2 {
+    grid-area: title;    
   }
 
   &__picture2 {
@@ -30,12 +43,82 @@
     align-self: flex-end;
   }
 
-  &__text {
-    grid-area: text;
-    margin: 0 80px 0 auto;
-    max-width: 870px;
+  &__text1,
+  &__text2,
+  &__text3 {
     width: 100%;
     font-weight: 400;
     font-size: 18px;
+  }
+
+  &__text1 {
+    max-width: 867px;
+    text-align: end;
+    padding-top: 120px;
+  }
+
+  &__text2 {
+    grid-area: text;
+    margin: 0 80px 0 auto;
+    max-width: 870px;    
+  }
+
+  &__block3 {
+    display: grid;
+    grid-template-columns: 928px 344px;
+    justify-content: space-between;
+    grid-template-areas: 
+    "img text3"
+    "img link";
+  }
+
+  &__block3-img {
+    grid-area: img;
+    width: 100%;
+    &::before {
+      content: "";
+      display: block;
+      z-index: 2;
+      width: 928px;
+      height: 246px;
+      background-color: @red;
+    }
+  }
+
+  &__picture3 {
+    position: relative;
+    z-index: 5;
+    bottom: 220px;
+    left: 50px;
+  }
+
+  &__text3 {
+    grid-area: text3;
+  }
+
+  &__link {
+    grid-area: link;
+    display: inline-flex;
+    flex-direction: row;
+    gap: 140px;
+    height: 60px;
+    align-items: center;
+    text-decoration: none;
+    color: @black;
+    transition: color 0.2s;
+    &:hover {
+      color: #bc3324;
+    }
+  }
+
+  &__link-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;    
+    text-decoration: none;
+  }
+
+  &__link-arrow {
+    color: inherit;
   }
 }
