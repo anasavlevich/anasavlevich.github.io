@@ -1079,6 +1079,8 @@ button.swiper-pagination-bullet {
   display: block;
   position: relative;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
