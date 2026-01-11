@@ -22,4 +22,39 @@
         align-self: flex-start;
         margin-bottom: 60px;
     }
+    .intro__form {
+        margin-bottom: 100px;
+    }
+    &__info {
+        box-sizing: border-box;        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px 67px;
+        &-title {
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: 600;            
+        }
+        &-section {
+            max-width: 401px;
+            min-width: 219px;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &-descr,
+        &-contacts {
+            text-align: center;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            text-wrap: wrap;
+        }
+        &-tel,
+        &-url {
+            text-decoration: underline transparent;
+        }
+    }
 }

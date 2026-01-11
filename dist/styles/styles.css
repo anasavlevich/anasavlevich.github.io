@@ -3037,6 +3037,58 @@ button.swiper-pagination-bullet {
       align-self: flex-start;
   margin-bottom: 60px;
 }
+.events .intro__form {
+  margin-bottom: 100px;
+}
+.events__info {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px 67px;
+}
+.events__info-title {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.events__info-section {
+  max-width: 401px;
+  min-width: 219px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.events__info-descr,
+.events__info-contacts {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-wrap: wrap;
+}
+.events__info-tel,
+.events__info-url {
+  -webkit-text-decoration: underline transparent;
+          text-decoration: underline transparent;
+}
 .event {
   margin: 40px 210px 150px;
 }
