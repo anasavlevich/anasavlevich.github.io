@@ -5,10 +5,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <title>LENNI Art</title>
+  <meta name="description" content="Арт—пространство для людей, горящих сердец и делом" />
+  <meta name="keywords" content="Lenni Art, пространство, мероприятия" />
+  <meta property="og:title" content="Lenni Art" />
+  <meta property="og:description" content="Арт пространство для людей, горящих сердцем и делом" />
+  <meta property="og:image" content="/assets/images/logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lenni-art.ru/" />
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="preconect" href="https://fonts.googleapis.com" />
   <link rel="preconect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="LENNI Art" />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
 </head>
 
 <body class="body">
@@ -357,8 +370,8 @@
             <a href="#" class="page-footer__link">Контакты</a>
           </blockquote>
         </div>
-        <div class="page-footer__form">
-          <form class="page-footer__form-container">
+        <div class="page-footer__form" id="js-eventForm">
+          <form action="https://jsonplaceholder.typicode.com/posts" class="page-footer__form-container subscribe-form" id="js-subscribeForm">
             <span class="page-footer__form-title">Подпишись и будь в курсе происходящего</span>
             <div class="page-footer__form-email">
               <label class="field page-footer__form-field">
@@ -408,7 +421,10 @@
     </div>
   </footer>
 
-  <script defer src="scripts\main.min.js"></script>
+  <script src="scripts/jQuery.js"></script>
+  <script src="scripts/jquery.validate.js"></script>
+  <script src="scripts/jquery.validate-init.js"></script>
+  <script src="scripts/main.min.js"></script>
 </body>
 
 </html>
