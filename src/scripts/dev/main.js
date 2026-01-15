@@ -277,7 +277,6 @@
   }
 
   const mobileMask = $(".js-mobileMask");
-
   if (mobileMask.length) {
     mobileMask.mask("+7 (000) 000 00 00", {
       placeholder: "+7 (___) ___ __ __",
@@ -291,7 +290,6 @@
       const dateDay = pick.find(".js-dateDay");
       const dateMonth = pick.find(".js-dateMonth");
       const dateYear = pick.find(".js-dateYear");
-
       const dateConfig = {
         autoClose: true,
         minDate: new Date(),
@@ -311,8 +309,14 @@
     });
   }
 
-  const subscribeForm = $("#js-subscribeForm");
+  const eventForm = $("#js-eventForm");
+  if (eventForm.length) {
+    eventForm.validate({
+      errorElement: "span",
+    });
+  }
 
+  const subscribeForm = $("#js-subscribeForm");
   if (subscribeForm.length) {
     const subscribeAction = subscribeForm.attr("action");
     const subscribeEmail = subscribeForm.find("#js-subscribeEmail");

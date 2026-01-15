@@ -43,11 +43,4 @@
   );
 
   //дальнейший код для валидации форм
-
-  const eventForm = $("#js-eventForm");
-  if (eventForm.length) {
-    eventForm.validate({
-      errorElement: "span",
-    });
-  }
 })();
