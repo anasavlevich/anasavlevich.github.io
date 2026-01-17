@@ -16,6 +16,10 @@
   }
 
   &__pic {
+    overflow: hidden;    
+  }
+
+  &__img {
     display: block;
     position: relative;
     width: 100%;
@@ -23,6 +27,14 @@
     padding-bottom: 70px;
     font-size: 0;
     text-decoration: none;
+    @media @bw1340 {
+      width: 120%;
+      margin-left: -11%;
+    }
+    @media @bw768 {
+      width: 150%;
+      margin-left: -26%;
+    } 
   }
 
   &__title1 {

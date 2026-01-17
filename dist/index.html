@@ -62,9 +62,11 @@
     <div class="home">
       <div class="intro">
         <span class="intro__title1">арт — пространство</span>
-        <svg class="intro__pic" width="1920" height="325">
-          <use xlink:href="assets/icons/symbols.svg#LENNI"></use>
-        </svg>
+        <div class="intro__pic">
+          <svg class="intro__img" width="1920" height="325">
+            <use xlink:href="assets/icons/symbols.svg#LENNI"></use>
+          </svg>
+        </div>
         <span class="intro__title2">
           для людей, горящих сердцем и делом
           <br />место для настоящего
@@ -148,6 +150,8 @@
 
       <section class="upcoming @@class">
         <div class="upcoming__wrapper">
+          <div class="upcoming__bg-1"></div>
+          <div class="upcoming__bg-2"></div>
           <div class="upcoming__container">
             <h2 class="upcoming__title section-title">Мероприятия</h2>
             <div class="upcoming__swiper swiper swiper--3s js-swiper">
@@ -283,6 +287,8 @@
             </div>
             <a href="#" class="upcoming__link link">Смотреть все</a>
           </div>
+          <div class="upcoming__bg-3"></div>
+          <div class="upcoming__bg-4"></div>
         </div>
       </section>
 
@@ -414,11 +420,6 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__contents">
-      <div class="page-footer__divider">
-        <svg class="page-footer__divider-img" width="1260" height="2">
-          <use xlink:href="assets/icons/symbols.svg#page-footer_divider"></use>
-        </svg>
-      </div>
       <div class="page-footer__container">
         <div class="content">
           <blockquote class="page-footer__links">
@@ -429,23 +430,23 @@
             <a href="#" class="page-footer__link">Контакты</a>
           </blockquote>
         </div>
-        <div class="page-footer__form" id="js-eventForm">
+        <div class="page-footer__form" id="js-subscribevalid">
           <form action="https://jsonplaceholder.typicode.com/posts" class="page-footer__form-container subscribe-form" id="js-subscribeForm">
             <span class="page-footer__form-title">Подпишись и будь в курсе происходящего</span>
             <div class="page-footer__form-email">
               <label class="field page-footer__form-field">
-                <input class="field__input page-footer__form-input" type="email" placeholder="Email" name="mailing_list_email" />
+                <input class="field__input page-footer__form-input" type="email" placeholder="Email" name="mailing_list_email" required />
               </label>
               <button type="submit" class="btn page-footer__form-btn">
                 Подписаться
               </button>
             </div>
             <label class="check page-footer__form-check">
-              <input type="checkbox" name="agree" class="check__input" required checked />
-              <span class="check__mark"></span>
               <span class="page-footer__form-checklabel">
                 Согласен на обработку персональных данных
               </span>
+              <input type="checkbox" name="agree" class="check__input" required checked />
+              <span class="check__mark"></span>
             </label>
           </form>
         </div>
@@ -567,12 +568,12 @@
             <textarea class="field__textarea" name="Пожелания"></textarea>
           </label>
           <label class="check field__agree-check">
-            <input type="checkbox" name="agree" class="check__input" required checked />
-            <span class="check__mark"></span>
             <span class="check__label check__label--s">
               Я соглашаюсь с пользовательским соглашением и с политикой
               использования персональных данных
             </span>
+            <input type="checkbox" name="agree" class="check__input" required checked />
+            <span class="check__mark"></span>
           </label>
           <div class="form__btns">
             <button type="submit" class="btn form__submit">Отправить</button>

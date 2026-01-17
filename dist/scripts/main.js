@@ -316,6 +316,13 @@
     });
   }
 
+  const subscribeValid = $("#js-subscribevalid");
+  if (subscribeValid.length) {
+    subscribeValid.validate({
+      errorElement: "span",
+    });
+  }
+
   const subscribeForm = $("#js-subscribeForm");
   if (subscribeForm.length) {
     const subscribeAction = subscribeForm.attr("action");

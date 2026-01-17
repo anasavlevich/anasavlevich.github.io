@@ -2,7 +2,17 @@
   font-family: @font1;
   font-weight: 600;
   font-size: 16px;
-  color: @black;  
+  color: @black;
+  &::before {
+      content: "";
+      display: block;
+      margin: 0 auto 60px;
+      width: 100vh;
+      height: 2px;
+      background: #ffffff;
+      background: linear-gradient(90deg,rgba(255, 255, 255, 0) 0%,  37%, rgba(0, 0, 0, 1) 46%, rgba(0, 0, 0, 0) 46%, rgba(0, 0, 0, 0) 54%, rgba(0, 0, 0, 1) 54%, rgba(0, 0, 0, 1) 64%, rgba(0, 0, 0, 0) 100%);
+      pointer-events: none;
+    }
 
   &__contents {
     box-sizing: border-box;
@@ -11,21 +21,21 @@
     margin: 0 auto 75px;
   }
 
-  &__container {    
+  &__container {
     display: grid;
-    grid-template-areas: 
-    "links links form"
-    "copyright copyright copyright"
-    "utility socials dignity";
+    grid-template-areas:
+      "links links form"
+      "copyright copyright copyright"
+      "utility socials dignity";
     gap: 20px 190px;
-    justify-content: space-between;    
+    justify-content: space-between;
   }
 
   &__divider {
     margin-bottom: 60px;
   }
 
-  &__divider-img {    
+  &__divider-img {
     width: 100%;
     max-width: 1260px;
   }
@@ -34,7 +44,7 @@
     grid-area: links;
     display: flex;
     flex-direction: column;
-  } 
+  }
 
   &__link {
     text-decoration: none !important;
@@ -67,7 +77,7 @@
     font-size: 14px;
     border: none;
     &:hover {
-        background-color: @red_dark;
+      background-color: @red_dark;
     }
   }
 
@@ -106,12 +116,20 @@
   &__socials {
     grid-area: socials;
     display: inline-flex;
-    gap: 44px;
+    gap: 44px;    
   }
 
   &__socials-link {
     position: relative;
     bottom: 40px;
+  }
+
+  &__socials-icon {
+    color: @black;
+    transition: color 0.2s;
+    &:hover {
+      color: @red;
+     }
   }
 
   &__dignity {

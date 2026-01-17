@@ -1,25 +1,65 @@
 .upcoming {
-    margin-bottom: 148px;
-    &__wrapper {
-        background-color: fade(@white, 60%)        
-    }
+  margin-bottom: 148px;
 
-    &__container {       
-        .container();
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-    }    
+  &__wrapper {
+    background-color: fade(@white, 60%);
+  }
 
-    &__link {
-        font-family: @font1;
-        font-weight: 600;
-        font-size: 16px;
-        text-decoration: none;
-        transition: color 0.2s;
-        &:hover {
-            color: @red;
-        }
+  &__bg-1 {
+    position: relative;
+    width: 0;
+	height: 0;
+    bottom: 20px;
+	border-bottom: 20px solid fade(@white, 60%);
+	border-right: 800px solid transparent;
+  }
+
+  &__bg-2 {
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    width: 0;
+	height: 0;    
+    bottom: 40px;
+	border-bottom: 20px solid fade(@white, 60%); 
+	border-left: 1100px solid transparent;
+  }
+
+  &__bg-3 {
+    position: relative;
+    width: 0;
+	height: 0;
+    top: 45px;
+	border-top: 25px solid fade(@white, 60%); 
+	border-right: 900px solid transparent;
+  }
+
+  &__bg-4 {
+    position: relative;
+    margin-left: auto;
+    margin-right: 0;
+    width: 0;
+	height: 0;
+    top: 20px;
+	border-top: 20px solid fade(@white, 60%); 
+	border-left: 1000px solid transparent;
+  }
+
+  &__container {
+    .container();
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  &__link {
+    font-family: @font1;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.2s;
+    &:hover {
+      color: @red;
     }
+  }
 }
-

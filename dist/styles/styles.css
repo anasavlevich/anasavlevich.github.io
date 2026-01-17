@@ -2949,6 +2949,13 @@ button.swiper-pagination-bullet {
   pointer-events: none;
   opacity: 0.5;
 }
+.check label.error,
+.check span.error {
+  display: block;
+  margin: 5px 0 0 15px;
+  font-size: 14px;
+  color: #bc3324;
+}
 .table {
   width: 100%;
   border-collapse: collapse;
@@ -3321,8 +3328,10 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 140px;
-  height: 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -3348,6 +3357,42 @@ button.swiper-pagination-bullet {
 }
 .upcoming__wrapper {
   background-color: rgba(255, 255, 255, 0.6);
+}
+.upcoming__bg-1 {
+  position: relative;
+  width: 0;
+  height: 0;
+  bottom: 20px;
+  border-bottom: 20px solid rgba(255, 255, 255, 0.6);
+  border-right: 800px solid transparent;
+}
+.upcoming__bg-2 {
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  width: 0;
+  height: 0;
+  bottom: 40px;
+  border-bottom: 20px solid rgba(255, 255, 255, 0.6);
+  border-left: 1100px solid transparent;
+}
+.upcoming__bg-3 {
+  position: relative;
+  width: 0;
+  height: 0;
+  top: 45px;
+  border-top: 25px solid rgba(255, 255, 255, 0.6);
+  border-right: 900px solid transparent;
+}
+.upcoming__bg-4 {
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  width: 0;
+  height: 0;
+  top: 20px;
+  border-top: 20px solid rgba(255, 255, 255, 0.6);
+  border-left: 1000px solid transparent;
 }
 .upcoming__container {
   -webkit-box-sizing: border-box;
@@ -3725,6 +3770,9 @@ button.swiper-pagination-bullet {
   text-transform: uppercase;
 }
 .intro__pic {
+  overflow: hidden;
+}
+.intro__img {
   display: block;
   position: relative;
   width: 100%;
@@ -4347,6 +4395,17 @@ button.swiper-pagination-bullet {
   font-size: 16px;
   color: #1f1e1e;
 }
+.page-footer::before {
+  content: "";
+  display: block;
+  margin: 0 auto 60px;
+  width: 100vh;
+  height: 2px;
+  background: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(37%), color-stop(46%, #000000), color-stop(46%, rgba(0, 0, 0, 0)), color-stop(54%, rgba(0, 0, 0, 0)), color-stop(54%, #000000), color-stop(64%, #000000), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, 37%, #000000 46%, rgba(0, 0, 0, 0) 46%, rgba(0, 0, 0, 0) 54%, #000000 54%, #000000 64%, rgba(0, 0, 0, 0) 100%);
+  pointer-events: none;
+}
 .page-footer__contents {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -4455,6 +4514,14 @@ button.swiper-pagination-bullet {
 .page-footer__socials-link {
   position: relative;
   bottom: 40px;
+}
+.page-footer__socials-icon {
+  color: #1f1e1e;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.page-footer__socials-icon:hover {
+  color: #bc3324;
 }
 .page-footer__dignity {
   grid-area: dignity;
@@ -4695,6 +4762,10 @@ button.swiper-pagination-bullet {
     font-size: 20px;
     line-height: 1.35;
   }
+  .intro__img {
+    width: 120%;
+    margin-left: -11%;
+  }
   .contacts__container {
     padding-left: 30px;
     padding-right: 30px;
@@ -4902,6 +4973,10 @@ button.swiper-pagination-bullet {
   .event-card__description {
     font-size: 14px;
     line-height: 1.357;
+  }
+  .intro__img {
+    width: 150%;
+    margin-left: -26%;
   }
   .contacts__container {
     padding-left: 20px;
