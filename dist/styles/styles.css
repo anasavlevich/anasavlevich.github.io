@@ -3674,6 +3674,88 @@ button.swiper-pagination-bullet {
   padding: 10px;
   text-align: center;
 }
+.summary__title {
+  text-align: center;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  font-size: 70px;
+}
+.summary__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 58px;
+}
+.summary__details1,
+.summary__details2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "mak", serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.summary__details1::before,
+.summary__details1::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #ffffff;
+  background: -webkit-gradient(linear, left top, right top, color-stop(39%, rgba(255, 255, 255, 0)), to(#000000));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 39%, #000000 100%);
+}
+.summary__details2::before,
+.summary__details2::after {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #ffffff;
+  background: -webkit-gradient(linear, right top, left top, color-stop(38%, rgba(255, 255, 255, 0)), to(#000000));
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 38%, #000000 100%);
+}
+.summary__time {
+  font-size: 30px;
+  font-weight: 300;
+}
+.summary__right-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.summary__img {
+  display: block;
+}
+.summary__pic {
+  width: 100%;
+  height: 100%;
+}
 .event-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3839,6 +3921,10 @@ button.swiper-pagination-bullet {
 }
 .contacts__map {
   grid-area: map;
+  width: 752px;
+  height: 495px;
+  margin-right: 0;
+  margin-left: auto;
 }
 .contacts__adress,
 .contacts__rent,
@@ -3877,6 +3963,16 @@ button.swiper-pagination-bullet {
   font-size: 16px;
   text-decoration: none;
   margin-bottom: 5px;
+}
+.contacts__decor-text {
+  text-align: right;
+  margin-top: 170px;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "mak", serif;
+  font-weight: 700;
+  font-size: 100px;
 }
 .listing {
   -webkit-box-sizing: border-box;
@@ -3937,6 +4033,19 @@ button.swiper-pagination-bullet {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+.listing__link {
+  text-align: right;
+  margin-top: 70px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.listing__link:hover {
+  color: #bc3324;
 }
 .article-card {
   -webkit-box-sizing: border-box;
@@ -4421,13 +4530,6 @@ button.swiper-pagination-bullet {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.page-footer__divider {
-  margin-bottom: 60px;
-}
-.page-footer__divider-img {
-  width: 100%;
-  max-width: 1260px;
-}
 .page-footer__links {
   grid-area: links;
   display: -webkit-box;
@@ -4500,6 +4602,14 @@ button.swiper-pagination-bullet {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 60px;
+}
+.page-footer__utility-link {
+  color: #1f1e1e;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.page-footer__utility-link:hover {
+  color: #bc3324;
 }
 .page-footer__utility-link {
   text-decoration: none;

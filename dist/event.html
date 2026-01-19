@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
@@ -60,6 +60,31 @@
 
   <main class="main">
     <article class="event">
+      <div class="event__summary summary">
+        <h1 class="summary__title">Вечер | The Best of Sade</h1>
+        <div class="summary__content">
+          <div class="summary__details1">
+            <time datetime="2024-12-16T20:00" class="summary__time">16/12/2024</time>
+            <span class="summary__venue">Кафе «Птичка»</span>
+          </div>
+          <div class="summary__img">
+            <picture class="summary__pic">
+              <source media="(max-width: 450px)" type="imgage/webp" srcset="assets/images/event/desktop/webp/event_1.webp" />
+              <source media="(max-width: 450px)" srcset="assets/images/event/desktop/event_1.jpg" />
+              <source media="(max-width: 1169px)" type="imgage/webp" srcset="assets/images/event/tablet/webp/event_1.webp" />
+              <source media="(max-width: 1169px)" srcset="assets/images/event/tablet/event_1.jpg" />
+              <img src="assets/images/event/desktop/event_1.jpg" />
+            </picture>
+          </div>
+          <div class="summary__details2">
+            <div class="summary__right-text">
+              <span class="summary__time">20.00</span>
+              <span class="summary__text">начало</span>
+            </div>
+            <span class="summary__adress">Ленина 10 | 2 этаж</span>
+          </div>
+        </div>
+      </div>
       <div class="event__content content">
         <h5>Программа мероприятия:</h5>
         <ul>
@@ -329,7 +354,9 @@
           </button>
         </div>
         <div class="reserve__legend">
-          <h4 class="reserve__section-title">Стоимость пригласительного билета</h4>
+          <h4 class="reserve__section-title">
+            Стоимость пригласительного билета
+          </h4>
           <div class="reserve__legend1">
             <span class="reserve__legend-red"></span>
             <div class="reserve__legend-text reserve__legend-text--var" data-price="1400" data-currency="₽" data-number="1" data-caption="персона"></div>

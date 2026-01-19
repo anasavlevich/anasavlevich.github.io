@@ -31,15 +31,6 @@
     justify-content: space-between;
   }
 
-  &__divider {
-    margin-bottom: 60px;
-  }
-
-  &__divider-img {
-    width: 100%;
-    max-width: 1260px;
-  }
-
   &__links {
     grid-area: links;
     display: flex;
@@ -106,8 +97,17 @@
     grid-area: utility;
     display: inline-flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 60px;    
   }
+
+  &__utility-link {
+    color: @black;
+    transition: color 0.2s;
+    &:hover {
+      color: @red;
+    }
+  }
+
 
   &__utility-link {
     text-decoration: none;
