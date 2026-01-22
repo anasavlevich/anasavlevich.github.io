@@ -1,12 +1,20 @@
 .about {
   &__container {
-        .container();
-    }
+    .container();
+  }
 
+  &__section-title {
+    @media @bw960 {
+      margin-top: -90px;
+    }
+    @media @bw600 {
+      margin-top: -100px;
+    }
+  }
   &__block1 {
     margin-bottom: 100px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   &__block2 {
@@ -17,7 +25,19 @@
       "pic1 pic2"
       "title pic2"
       "text text";
-      margin-bottom: 75px;
+    margin-bottom: 75px;
+    @media @bw960 {
+      grid-template-areas:
+        "pic1 pic1"
+        "title pic2"
+        "text pic2";
+      grid-template-columns: 55% auto;
+    }
+    @media @bw700 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__picture1 {
@@ -28,19 +48,37 @@
   &__title2 {
     font-weight: 700;
     font-size: 44px;
+    @media @bw960 {
+      font-size: 26px;
+    }
+    @media @bw370 {
+      font-size: 16px;
+    }
   }
 
   &__title1 {
     text-wrap: nowrap;
   }
-  
+
   &__title2 {
-    grid-area: title;    
+    grid-area: title;
+    @media @bw960 {
+      width: 420px;
+    }
+    @media @bw700 {
+      width: 100%;
+      margin-top: -50px;
+    }
   }
 
   &__picture2 {
     grid-area: pic2;
     align-self: flex-end;
+    width: 100%;
+    @media @bw700 {
+      width: 70%;
+      margin-top: -50px;
+    }
   }
 
   &__text1,
@@ -49,32 +87,66 @@
     width: 100%;
     font-weight: 400;
     font-size: 18px;
+    @media @bw960 {
+      font-size: 16px;
+    }
   }
 
   &__text1 {
     max-width: 867px;
     text-align: end;
-    padding-top: 120px;
+    align-self: end;
+    @media @bw400 {
+      text-align: start;
+    }
   }
 
   &__text2 {
     grid-area: text;
     margin: 0 80px 0 auto;
-    max-width: 870px;    
+    max-width: 870px;
+    @media @bw960 {
+      text-align: start;
+      margin-left: 30px;
+      margin-top: -50px;
+    }
+    @media @bw700 {
+      margin-left: auto;
+      margin-top: -70px;
+    }
   }
 
   &__block3 {
     display: grid;
-    grid-template-columns: 928px 344px;
+    grid-template-columns: 2fr 1fr;
+    gap: 62px;
     justify-content: space-between;
-    grid-template-areas: 
-    "img text3"
-    "img link";
+    grid-template-areas:
+      "img text3"
+      "img link";
+    @media @bw1660 {
+      gap: 40px;
+    }
+    @media @bw1340 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 100px;
+    }
+    @media @bw650 {
+      justify-content: center;
+    }
   }
 
   &__block3-img {
     grid-area: img;
     width: 100%;
+    @media @bw1340 {
+      margin-bottom: -180px;
+    }
+  }
+
+  &__block3-pic {
     &::before {
       content: "";
       display: block;
@@ -82,18 +154,55 @@
       width: 928px;
       height: 246px;
       background-color: @red;
-    }
+      @media @bw960 {
+        width: 708px;
+        height: 187px;
+        margin-bottom: 50px;
+      }
+      @media @bw600 {
+        height: 220px;
+        margin-bottom: 30px;
+      }
+      @media @bw500 {
+        height: 170px;
+        margin-bottom: 80px;
+      }
+      @media @bw400 {
+        height: 140px;
+        margin-bottom: 100px;
+      }
+      @media @bw370 {
+        width: 280px;
+        height: 74px;
+        margin-bottom: 150px;
+      }
+    }    
   }
 
   &__picture3 {
     position: relative;
+    width: 100%;
+    height: 100%;
     z-index: 5;
     bottom: 220px;
-    left: 50px;
+    left: 50px;    
+    @media @bw1340 {
+      left: 50px;
+    }
+    @media @bw960 {
+      left: 20px;
+    }
+    @media @bw370 {
+      left: 12px;
+    }
   }
 
   &__text3 {
     grid-area: text3;
+    @media @bw1340 {
+      margin-top: -50px;
+      max-width: 280px;
+    }
   }
 
   &__link {
@@ -109,12 +218,18 @@
     &:hover {
       color: @red;
     }
+    @media @bw1340 {
+      min-width: 260px;
+    }
+    @media @bw400 {
+      font-size: 14px;
+    }
   }
 
   &__link-text {
     font-weight: 600;
     font-size: 16px;
-    line-height: 22px;    
+    line-height: 22px;
     text-decoration: none;
   }
 

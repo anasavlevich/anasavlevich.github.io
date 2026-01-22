@@ -13,6 +13,18 @@
     font-size: 45px;
     line-height: 1.29;
     text-transform: uppercase;
+    @media @bw1660 {
+      font-size: 35px;
+    }
+    @media @bw960 {
+      font-size: 30px;
+    }
+    @media @bw700 {
+      font-size: 25px;
+    }
+    @media @bw600 {
+      font-size: 13px;
+    }
   }
 
   &__pic {
@@ -24,25 +36,66 @@
     position: relative;
     width: 100%;
     margin: 0 auto 25px;
-    padding-bottom: 70px;
     font-size: 0;
     text-decoration: none;
-    @media @bw1340 {
+    @media @bw1660 {
       width: 120%;
       margin-left: -11%;
     }
-    @media @bw768 {
+    @media @bw960 {
       width: 150%;
       margin-left: -26%;
-    } 
+    }
+    @media @bw700 {
+      width: 160%;
+      margin-left: -31%;
+    }
+    @media @bw600 {
+      width: 170%;
+      margin-left: -36%;
+    }
   }
 
   &__title1 {
-    padding-bottom: 70px;
+    margin-bottom: 70px;
+    @media @bw1660 {
+      margin-bottom: 0px;
+    }
+    @media @bw960 {
+      margin-bottom: -30px;
+    }
+    @media @bw700 {
+      margin-bottom: -60px;
+    }
+    @media @bw600 {
+      margin-bottom: -80px;
+    }
+    @media @bw400 {
+      margin-bottom: -100px;
+    }
   }
 
   &__title2 {
-    padding-bottom: 100px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    @media @bw1660 {
+      margin-top: 0px;
+    }
+    @media @bw960 {
+      margin-top: -30px;
+      margin-bottom: 70px;
+    }
+    @media @bw700 {
+      margin-top: -60px;
+      margin-bottom: 50px;
+    }
+    @media @bw600 {
+      margin-top: -90px;
+    }
+    @media @bw400 {
+      margin-top: -110px;
+      margin-bottom: 40px;
+    }
   }
 
   &__title3 {
@@ -55,6 +108,16 @@
     font-size: 22px;
     line-height: 30px;
     text-transform: uppercase;
+    @media @bw1660 {
+      font-size: 22px;
+    }
+    @media @bw960 {
+      font-size: 16px;
+    }
+    @media @bw370 {
+      margin-bottom: 25px;
+      font-size: 13px;
+    }
   }  
 
   &__btns {
@@ -64,6 +127,13 @@
     justify-content: center;
     gap: 106px;
     width: 100%;
+    @media @bw768 {
+      flex-direction: column-reverse;
+      max-width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 25px;
+    }
   }  
 
   &__btn-patron {

@@ -71,6 +71,9 @@
   @media @bw768 {
     margin: 60px auto 0;
   }
+  @media @bw500 {
+    max-width: 270px;
+  }
 }
 
 .swiper-arrow-prev,
@@ -83,6 +86,11 @@
   transition: color 0.2s;
   &:hover {
     color: @red;
+  }
+  @media @bw500 {
+    .arrow__icon {
+      width: 62px;
+    }
   }
 }
 
@@ -103,6 +111,9 @@
   width: auto;
   margin: 0 auto;
   padding: 0 15px;
+  @media @bw500 {
+    padding: 0 10px;
+  }
 }
 
 .swiper-pagination-bullet {
@@ -114,6 +125,9 @@
   background-color: @gray_dark;
   background-clip: padding-box;
   opacity: 1;
+  @media @bw500 {
+    width: 10px;
+  }
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {

@@ -2,12 +2,17 @@
   box-sizing: border-box;
   position: relative;
   display: flex;
+  flex-direction: row;
   width: 100%;
   &:hover {
     .article-card__pic {
       box-shadow: 0 0 30px rgba(31, 31, 30, 0.55);
-    }
+    }    
   }
+  @media @bw1020 {
+      flex-direction: column;
+    }
+  
 
   &__link {
     flex-shrink: 0;
@@ -24,6 +29,9 @@
           text-decoration-color: @red;
         }
       }
+    }
+    @media @bw1020 {
+      width: 100%;
     }
   }
 
@@ -84,6 +92,10 @@
       color: @red;
       text-decoration-color: @red;
     }
+    @media @bw500 {
+      min-width: 280px;
+      margin-top: -20px;
+    }
   }
 
   &__title {
@@ -92,12 +104,23 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 1.375;
+    @media @bw960 {
+      font-size: 20px;
+    }
+    @media @bw500 {
+      font-size: 16px;
+    }
   }
 
   &__description {
     margin: 0;
     font-size: 16px;
     line-height: 1.375;
+    @media @bw500 {
+      font-size: 14px;
+      min-width: 260px;
+      margin-top: -20px;
+    }
   }
 
   &__arrow {
@@ -106,6 +129,12 @@
     right: 0;
     color: inherit;
     transition: none;
+    @media @bw500 {
+      bottom: -40px;
+      .arrow__icon {
+        width: 67px;
+      }
+    }    
   }
 
   & + .article-card {
