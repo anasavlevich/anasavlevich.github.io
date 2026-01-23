@@ -12,7 +12,10 @@
   line-height: 20px;
   text-align: center;
   text-decoration: none;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  transition:
+    color 0.2s,
+    background-color 0.2s,
+    border-color 0.2s;
   overflow: hidden;
   cursor: pointer;
 
@@ -30,7 +33,10 @@
     background-color: @red;
     color: @white;
     border: none;
-    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    transition:
+      color 0.2s,
+      background-color 0.2s,
+      border-color 0.2s;
     &:hover {
       background-color: @red_dark;
     }
@@ -49,6 +55,12 @@
   transition: background-color 0.2s;
   &:hover {
     cursor: pointer;
+  }
+  @media @bw600 {
+    width: 36px;
+    height: 36px;
+    top: 20px;
+    background-color: transparent;
   }
   &__icon {
     pointer-events: none;
