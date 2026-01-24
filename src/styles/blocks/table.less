@@ -3,15 +3,48 @@
   border-collapse: collapse;
   color: @black;
   text-align: center;
+  margin-bottom: 50px;
+  @media @bw1340 {
+    width: 92%;
+    margin-left: 40px;
+  }
+  @media @bw960 {
+    width: 94%;
+    margin-left: 30px;
+    margin-bottom: 40px;
+  }
+  @media @bw768 {
+    width: 92%;
+  }
+  @media @bw600 {
+    width: 100%;
+    margin-left: 0;
+  }
+  &__head,
+  &__body,
+  &__foot {
+    @media @bw600 {
+      display: block;
+    }
+  }
+  &__head-tr,
+  &__foot-tr {
+    @media @bw600 {
+      display: flex;
+      width: 100%;
+    }
+  }
   &__th {
     height: 85px;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.39;
-    text-transform: uppercase;
     border-right: 1px solid #bfbfbf;
     &:last-child {
       border: none;
+    }
+    @media @bw960 {
+      font-size: 14px;
     }
   }
   &__body-th,
@@ -28,10 +61,20 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.39;
+    @media @bw600 {
+      width: 100%;
+      text-align: center;
+      font-weight: 600;
+      font-size: 14px;
+    }
   }
   &__tr {
     &:nth-child(2n-1) {
       background-color: fade(@black, 3%);
+    }
+    @media @bw600 {
+      display: flex;
+      flex-wrap: wrap;
     }
   }
   &__td {
@@ -42,6 +85,9 @@
     border: 1px solid #bfbfbf;
     &:last-child {
       border-right: none;
+    }
+    @media @bw600 {
+      width: 33.3333%;
     }
   }
   &__ok {
@@ -58,7 +104,7 @@
       left: 9px;
       top: 4px;
       width: 6px;
-      height: 12px;      
+      height: 12px;
       border-bottom: 2px solid @white;
       border-right: 2px solid @white;
       transform: rotate(45deg);
@@ -70,6 +116,26 @@
     border-right: 1px solid #bfbfbf;
     &:last-child {
       border: none;
+    }
+    @media @bw600 {
+      font-weight: 300;
+      font-size: 14px;
+      color: fade(@black, 50%);
+    }
+  }
+  &__th,
+  &__foot-th {
+    box-sizing: border-box;
+    text-transform: uppercase;
+    @media @bw600 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 33.3333%;
+      &:first-child {
+        display: none;
+      }
     }
   }
 }
